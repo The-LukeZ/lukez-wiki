@@ -3,8 +3,6 @@ layout: home
 title: LukeZ Wiki
 ---
 
-# Welcome to LukeZ Wiki
-
 This wiki contains various guides and documentation related to my projects and tools.
 
 ## All Documentation
