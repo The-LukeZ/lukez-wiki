@@ -3,7 +3,6 @@ name: Build and Deploy Jekyll Wiki
 on:
   push:
     branches: ["main"]
-    paths: ["wiki/**"] # Only trigger when wiki folder changes
   workflow_dispatch:
 
 permissions:
@@ -28,7 +27,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./wiki
+          source: ./
           destination: ./_site
 
       - name: Upload artifact
