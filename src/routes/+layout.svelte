@@ -10,6 +10,6 @@
   </nav>
 </div>
 
-<main>
+<main class="markdown-body">
   {@render children()}
 </main>

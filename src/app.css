@@ -8,48 +8,6 @@
 @layer base {
   * {
     font-family: "Source Sans Pro", "Helvetica Neue", "Arial", sans-serif;
-    font-size: 1.1rem;
-  }
-
-  a {
-    @apply link link-info link-hover;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold my-2;
-  }
-
-  h1 {
-    @apply text-3xl;
-  }
-
-  h2 {
-    @apply text-2xl;
-  }
-
-  h3 {
-    @apply text-xl;
-  }
-
-  h4 {
-    @apply text-lg;
-  }
-
-  h5 {
-    @apply text-base;
-  }
-
-  h6 {
-    @apply text-sm;
-  }
-
-  p:not(:last-child) {
-    @apply mb-1;
   }
 
   nav {
@@ -62,6 +20,54 @@
 }
 
 @layer components {
+  div.markdown-body {
+    * {
+      @apply text-base text-base-content;
+      font-size: 1.1rem;
+    }
+
+    a {
+      @apply link link-info link-hover;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply font-bold my-2;
+    }
+
+    h1 {
+      @apply text-3xl;
+    }
+
+    h2 {
+      @apply text-2xl;
+    }
+
+    h3 {
+      @apply text-xl;
+    }
+
+    h4 {
+      @apply text-lg;
+    }
+
+    h5 {
+      @apply text-base;
+    }
+
+    h6 {
+      @apply text-sm;
+    }
+
+    p:not(:last-child) {
+      @apply mb-1;
+    }
+  }
+
   .tip {
     @apply alert alert-info shadow-lg;
   }
