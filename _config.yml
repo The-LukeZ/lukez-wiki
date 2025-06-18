@@ -7,7 +7,7 @@
 title: LukeZ Wiki
 description: A knowledge base for LukeZ projects, built with Jekyll
 url: "https://the-lukez.github.io"
-baseurl: "/"
+baseurl: "/lukez-wiki"
 
 # Build settings
 markdown: kramdown
