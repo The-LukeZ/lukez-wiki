@@ -1,8 +1,8 @@
-import { marked } from "marked";
 import MagicString from "magic-string";
+import { marked } from "marked";
 
 /**
- * Svelte Markdown Preprocessor for .svmd files
+ * Svelte Markdown Preprocessor for .svelte.md files
  *
  * This preprocessor allows you to write Svelte components that can include
  * markdown content directly, with support for:
@@ -159,15 +159,15 @@ export const svelteMarkdownPreprocessor = {
   name: "svelte-markdown",
 
   /**
-   * Process .svmd files
+   * Process .svelte.md files
    * @param {object} options - Preprocessor options
    * @param {string} options.content - File content
    * @param {string} options.filename - File name
    * @returns {object} Processed result
    */
   markup({ content, filename }) {
-    // Only process .svmd files
-    if (!filename || !filename.endsWith(".svmd")) {
+    // Only process .svelte.md files
+    if (!filename || !filename.endsWith(".svelte.md")) {
       return;
     }
 
@@ -222,7 +222,7 @@ ${html}`;
         map: s.generateMap({ hires: true }),
       };
     } catch (error) {
-      console.error("Error processing .svmd file:", error);
+      console.error("Error processing .svelte.md file:", error);
       throw error;
     }
   },
@@ -240,7 +240,7 @@ export function createSvelteMarkdownPreprocessor(options = {}) {
   return {
     name: "svelte-markdown",
     markup({ content, filename }) {
-      if (!filename || !filename.endsWith(".svmd")) {
+      if (!filename || !filename.endsWith(".svelte.md")) {
         return;
       }
 

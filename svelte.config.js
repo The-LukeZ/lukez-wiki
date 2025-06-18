@@ -9,10 +9,10 @@ const config = {
     adapter: adapter(),
     router: { type: "hash" },
     paths: {
-      base: "/wiki",
+      base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
     },
   },
-  extensions: [".svelte", ".svmd"],
+  extensions: [".svelte", ".svelte.md"],
 };
 
 export default config;

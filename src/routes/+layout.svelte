@@ -6,7 +6,7 @@
 
 <div class="nav-wrapper">
   <nav>
-    <a href="/" class="btn btn-primary no-underline btn-sm">LukeZ Wiki</a>
+    <a href="#/" class="btn btn-primary no-underline btn-sm">LukeZ Wiki</a>
   </nav>
 </div>
 

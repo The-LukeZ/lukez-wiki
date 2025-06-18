@@ -12,11 +12,7 @@ node_modules
 .DS_Store
 Thumbs.db
 
-# Env
-.env
-.env.*
-!.env.example
-!.env.test
+# We don't have sensitive environment variables, so we don't need to ignore .env files
 
 # Vite
 vite.config.js.timestamp-*
