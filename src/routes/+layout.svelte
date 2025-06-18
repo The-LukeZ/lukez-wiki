@@ -6,8 +6,10 @@
 
 <div class="nav-wrapper">
   <nav>
-    <a href="/">LukeZ Wiki</a>
+    <a href="/" class="btn btn-primary no-underline btn-sm">LukeZ Wiki</a>
   </nav>
 </div>
 
-{@render children()}
+<main>
+  {@render children()}
+</main>

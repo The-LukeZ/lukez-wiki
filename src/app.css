@@ -47,4 +47,22 @@
   h6 {
     @apply text-sm;
   }
+
+  p:not(:last-child) {
+    @apply mb-1;
+  }
+
+  nav {
+    @apply h-14 flex flex-row items-center justify-between px-4 bg-base-200;
+  }
+
+  main {
+    @apply mt-16 fixed top-0 left-0 right-0 bottom-0 overflow-y-auto;
+  }
+}
+
+@layer components {
+  .tip {
+    @apply alert alert-info shadow-lg;
+  }
 }
