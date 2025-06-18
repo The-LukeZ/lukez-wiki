@@ -5,7 +5,13 @@ import { svelteMarkdownPreprocessor } from "./preprocessor.js";
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   preprocess: [vitePreprocess(), svelteMarkdownPreprocessor],
-  kit: { adapter: adapter(), router: { type: "hash" } },
+  kit: {
+    adapter: adapter(),
+    router: { type: "hash" },
+    paths: {
+      base: "wiki",
+    },
+  },
   extensions: [".svelte", ".svmd"],
 };
 
