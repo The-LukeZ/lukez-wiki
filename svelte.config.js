@@ -9,7 +9,7 @@ const config = {
     adapter: adapter(),
     router: { type: "hash" },
     paths: {
-      base: "wiki",
+      base: "/wiki",
     },
   },
   extensions: [".svelte", ".svmd"],
