@@ -7,15 +7,12 @@
 title: LukeZ Wiki
 description: A knowledge base for LukeZ projects, built with Jekyll
 url: "https://the-lukez.github.io"
-baseurl: "/wiki"
+baseurl: "/"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 theme: minima
-
-# Source directory
-source: wiki
 
 # Collections (optional, for organizing content)
 collections:
@@ -33,3 +30,7 @@ plugins:
 exclude:
   - README.md
   - .github/
+
+header_pages:
+  - index.md
+  - about.md
