@@ -20,7 +20,7 @@
 }
 
 @layer components {
-  div.markdown-body {
+  .markdown-body {
     * {
       @apply text-base text-base-content;
       font-size: 1.1rem;
